@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import AboutMe from '../components/navbar/aboutme/AboutMe';
+import AboutMe from '../components/aboutme/AboutMe';
 
 export default(
     <Switch>
