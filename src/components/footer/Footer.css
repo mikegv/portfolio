@@ -1,0 +1,37 @@
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    border: solid 2px purple;
+}
+
+.footer .socialIcons{
+    display:flex;
+    padding-right: 250px;
+    justify-content: flex-end;
+    border: solid 2px blue;
+}
+
+.footer .socialIcons .icon{
+    height: 30px;
+    width: 30px;
+    color:white;
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    font-size: larger;
+    letter-spacing: 10px;
+    margin-left: 50px;
+}
+
+.footer a:hover{
+    color:rebeccapurple;
+    background-color: darkkhaki;
+}
+
+
