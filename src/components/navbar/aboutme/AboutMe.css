@@ -1,0 +1,9 @@
+.aboutMe{
+    display:flex;
+    align-items: center;
+    border: solid black 2px;
+    font-size: xx-large;
+    font-weight: 700;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 50px 200px 50px 200px;
+}
