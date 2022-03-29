@@ -2,6 +2,7 @@
     display:flex;
     justify-content: space-between;
     padding:20px 250px 20px 60px;
+    color: white;
     border: solid 2px blue;
 }
 
@@ -27,6 +28,7 @@ ul li a{
     font-weight: 300;
     font-size: larger;
     letter-spacing: 10px;
+    color:white;
 }
 
 ul li a:hover{
