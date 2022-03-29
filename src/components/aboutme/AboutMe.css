@@ -1,6 +1,7 @@
 .aboutMe{
     display:flex;
     align-items: center;
+    color:white;
     border: solid black 2px;
     font-size: xx-large;
     font-weight: 700;
