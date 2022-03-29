@@ -1,3 +1,35 @@
 .navbar{
     display:flex;
+    justify-content: space-between;
+    padding:20px 250px 20px 60px;
+    border: solid 2px blue;
+}
+
+.navbar * {
+    border: solid 2px yellow;
+}
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    border: solid 2px red;
+}
+
+.navbar ul li{
+    margin: 0px 30px 0px 30px;
+}
+
+
+
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    font-size: larger;
+    letter-spacing: 10px;
+}
+
+ul li a:hover{
+    color:rebeccapurple;
+    background-color: darkkhaki;
 }
