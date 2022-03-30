@@ -7,9 +7,9 @@ const Navbar = () => {
         <div class='navbar'>
             <div>Mikes Portfolio</div>
             <ul>
-                <li><Link to="/projects" >Mike</Link></li>
-                <li><Link>Villa</Link></li>
-                <li><Link>Jr</Link></li>
+                <li><Link to="/" >Mike</Link></li>
+                <li><Link to='/aboutme'>Villa</Link></li>
+                <li><Link to='/projects'>Jr</Link></li>
             </ul>
         </div>
     );
