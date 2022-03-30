@@ -1,10 +1,18 @@
 .aboutMe{
     display:flex;
-    align-items: center;
+    flex-direction: column;
     color:white;
     border: solid black 2px;
     font-size: xx-large;
     font-weight: 700;
     font-family:Arial, Helvetica, sans-serif;
     padding: 50px 200px 50px 200px;
+    margin-top: 30px;
+}
+
+
+.aboutMeTitle{
+    font-size: 200%;
+    margin-bottom: 50px;
+    line-height: 140%;
 }
