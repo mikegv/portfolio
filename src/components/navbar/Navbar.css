@@ -6,9 +6,7 @@
     border: solid 2px blue;
 }
 
-.navbar * {
-    border: solid 2px yellow;
-}
+
 .navbar ul{
     list-style-type: none;
     display: flex;
@@ -29,9 +27,13 @@ ul li a{
     font-size: larger;
     letter-spacing: 10px;
     color:white;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom .7s ease;
 }
 
 ul li a:hover{
     color:rebeccapurple;
-    background-color: darkkhaki;
+    border-bottom: 2px solid white;
+    transition: border-bottom .7s ease;
 }
