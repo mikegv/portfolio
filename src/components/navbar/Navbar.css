@@ -3,37 +3,40 @@
     justify-content: space-between;
     padding:20px 250px 20px 60px;
     color: white;
-    border: solid 2px blue;
 }
 
+.navbar:hover{
+    padding:20px 180px 20px 60px;
+}
+.navbar:hover ul li{
+    margin: 0px 45px 0px 0px;
+}
 
 .navbar ul{
     list-style-type: none;
     display: flex;
-    border: solid 2px red;
 }
 
 .navbar ul li{
     margin: 0px 30px 0px 30px;
-}
-
-
-
-
-ul li a{
-    text-decoration: none;
-    color: black;
-    font-weight: 300;
-    font-size: larger;
-    letter-spacing: 10px;
-    color:white;
-    padding-bottom: 3px;
     border-bottom: 2px solid transparent;
     transition: border-bottom .7s ease;
 }
 
-ul li a:hover{
-    color:rebeccapurple;
-    border-bottom: 2px solid white;
+ul li a{
+    text-decoration: none;
+    font-weight: 300;
+    font-size: larger;
+    letter-spacing: 9px;
+    color:white;
+    padding-bottom: 3px;
+    padding-left:4px;
+}
+
+.navbar:hover > ul li a{
+    letter-spacing: 5px;
+}
+.navbar ul li:hover{
+    border-bottom: 2px solid rgb(199, 192, 192);
     transition: border-bottom .7s ease;
 }
