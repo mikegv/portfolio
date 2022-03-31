@@ -3,13 +3,11 @@
     justify-content: space-around;
     min-height: 60vh;
     color:white;
-    border: white dashed 2px;    
     padding: 10px;
     margin-top: 50px;
 }
 .project{
-    border: purple solid 2px;
     display: flex;
     align-items: center;
-    background-color: lightgrey;
+    background-color: rgba(40, 40, 40, .5);
 }

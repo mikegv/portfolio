@@ -5,20 +5,26 @@
     width: 100%;
     text-align: center;
     color: white;
-    border: solid 2px purple;
 }
 
 .footer .socialIcons{
     display:flex;
     padding-right: 250px;
     justify-content: flex-end;
-    border: solid 2px blue;
+    align-items: flex-end;
 }
 
 .footer .socialIcons .icon{
-    height: 30px;
-    width: 30px;
+    height: 22px;
+    width: 22px;
     color:white;
+    transition: height .3s ease;
+}
+.footer .socialIcons .icon:hover{
+    height: 25px;
+    width: 25px;
+    color:white;
+    transition: height  ;
 }
 .footer a{
     text-decoration: none;
@@ -29,9 +35,6 @@
     margin-left: 50px;
 }
 
-.footer a:hover{
-    color:rebeccapurple;
-    background-color: darkkhaki;
-}
+
 
 

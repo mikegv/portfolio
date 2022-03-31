@@ -1,0 +1,28 @@
+.homepageContainer{
+    height: 50vh;
+    margin-top:100px;
+ overflow: hidden;
+}
+.homepage{
+    color:white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    border: solid 2px red;
+    animation-name: example;
+    animation-duration: 2.5s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes example{
+    from{margin-right: -2000px;}
+    to{}
+}
+
+.mike{
+    border: solid red 2px;
+    color: white;
+}
