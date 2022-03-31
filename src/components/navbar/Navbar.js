@@ -1,15 +1,25 @@
 import React from 'react';
 import './Navbar.css'
 import { Link } from 'react-router-dom'
+import { useState } from 'react';
 
 const Navbar = () => {
+    const mouseOut = {Home:'Mike', AboutMe:'Villa', Projects:'Jr'}
+    const mouseOver = {Home:'Home', AboutMe:'About Me', Projects:'Projects'}
+    const [menuItems, setMenuItems] = useState(mouseOut)
+
     return (
-        <div class='navbar'>
+        <div class='navbar' onMouseOver={
+                ()=>{setMenuItems(mouseOver)}
+        } 
+        onMouseOut={
+            ()=>{setMenuItems(mouseOut)}
+        } >
             <div>Mikes Portfolio</div>
             <ul>
-                <li><Link to="/" >Mike</Link></li>
-                <li><Link to='/aboutme'>Villa</Link></li>
-                <li><Link to='/projects'>Jr</Link></li>
+                <li><Link to="/" >{menuItems.Home}</Link></li>
+                <li><Link to='/aboutme'>{menuItems.AboutMe}</Link></li>
+                <li><Link to='/projects'>{menuItems.Projects}</Link></li>
             </ul>
         </div>
     );
