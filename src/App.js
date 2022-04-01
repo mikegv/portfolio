@@ -7,7 +7,9 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <div className='content'>
         {routes}
+        </div>
       <Footer />
     </div>
   );

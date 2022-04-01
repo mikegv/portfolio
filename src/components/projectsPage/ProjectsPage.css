@@ -1,15 +1,18 @@
 .projectsContainer{
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     min-height: 60vh;
     color:white;
-    border: white dashed 2px;    
     padding: 10px;
     margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 .project{
-    border: purple solid 2px;
     display: flex;
     align-items: center;
-    background-color: lightgrey;
+    background-color: rgba(40, 40, 40, .5);
+    margin: 20px 20px 20px 20px;
 }

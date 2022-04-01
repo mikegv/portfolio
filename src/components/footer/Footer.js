@@ -10,9 +10,9 @@ const Footer = () => {
     return (
         <div className='footer'>
             <div className='socialIcons'>
-                <Link to='#'>
+                <a href='https://github.com/mikegv' target='_blank'>
                     <FontAwesomeIcon icon={faGithub} className='icon' />
-                </Link>
+                </a>
                 <Link to='#'>
                     <FontAwesomeIcon icon={faLinkedin} className='icon' />
                 </Link>
