@@ -1,28 +1,42 @@
 .homepageContainer{
     height: 50vh;
-    margin-top:100px;
+    margin-top:150px;
  overflow: hidden;
+ text-align: center;
 }
 .homepage{
     color:white;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: xx-large;
-    border: solid 2px red;
+    display:inline-block;
+    font-size: 250%;
+    color:rgb(148, 148, 148);
     animation-name: example;
     animation-duration: 2.5s;
-    animation-delay: 2s;
+    animation-delay: .5s;
     animation-fill-mode: backwards;
+}
+.titleSentence{
+    font-size: 250%;
+    color:rgb(179, 179, 179);
 }
 
 @keyframes example{
-    from{margin-right: -2000px;}
+    from{margin-right: -3000px;}
     to{}
 }
 
 .mike{
+    display:inline-block;
     border: solid red 2px;
     color: white;
+    animation-name: example2;
+    animation-duration: 2s;
+}
+
+@keyframes example2{
+    from{
+margin-right: 100px;    }
+    to{
+        margin-right: 300px;
+    }
+
 }
