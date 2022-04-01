@@ -1,7 +1,6 @@
 
 .footer{
-    position: absolute;
-    bottom: 0;
+    border: solid red 2px;
     width: 100%;
     text-align: center;
     color: white;
@@ -15,16 +14,14 @@
 }
 
 .footer .socialIcons .icon{
-    height: 22px;
-    width: 22px;
-    color:white;
-    transition: height .3s ease;
-}
-.footer .socialIcons .icon:hover{
     height: 25px;
     width: 25px;
     color:white;
-    transition: height  ;
+}
+.footer .socialIcons .icon:hover{
+    margin-bottom: 3px;
+    color:white;
+    transition: margin-bottom .2s;
 }
 .footer a{
     text-decoration: none;

@@ -17,8 +17,8 @@ const ProjectsPage = () => {
                 alt='four cards' 
                 />
                 </a>
-            </div>
-          
+
+</div>
 
           
             

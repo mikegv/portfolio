@@ -1,11 +1,12 @@
 .aboutMe{
     display:flex;
     flex-direction: column;
-    color:white;
+    color:rgb(207, 207, 207);
     border: solid black 2px;
     font-size: xx-large;
-    font-weight: 700;
+    font-weight: 800;
     font-family:Arial, Helvetica, sans-serif;
+    line-height: 120%;
     padding: 50px 200px 50px 200px;
     margin-top: 100px;
 }

@@ -3,6 +3,19 @@
   padding: 0px;
   box-sizing: border-box;
 }
+/*
+html, body{
+  height: 100%;
+}*/
 body{
   background-color:black;
+  /*display:flex;
+  flex-direction: column;
+  min-height: 100vh; */
+  border: solid blue 2px;
+}
+
+.content{
+  border: solid yellow 2px;
+  /*flex: 1;*/
 }
