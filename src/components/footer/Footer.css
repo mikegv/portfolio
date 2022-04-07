@@ -16,11 +16,12 @@
     height: 25px;
     width: 25px;
     color:white;
+    transition: transform .3s;
 }
 .footer .socialIcons .icon:hover{
-    margin-bottom: 3px;
     color:white;
-    transition: margin-bottom .2s;
+    transform: translateY(-3px);
+    transition: transform .3s;
 }
 .footer a{
     text-decoration: none;
