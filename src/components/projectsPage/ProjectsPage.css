@@ -13,6 +13,10 @@
 .project{
     display: flex;
     align-items: center;
-    background-color: rgba(40, 40, 40, .5);
     margin: 20px 20px 20px 20px;
+}
+
+.project a img{
+    width:429px;
+    height:223px;
 }

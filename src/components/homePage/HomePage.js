@@ -9,7 +9,7 @@ const HomePage = () => {
 
             </div>
             <div className='homepage'>
-                <p class='titleSentence'>My name is <span className='myname'>Mike Villa</span></p>
+                <p class='titleSentence'>My name is <br /><span className='myname'>Mike Villa</span></p>
                 <p>I am a front end developer </p>
                 <p>I make dynamic websites </p>
             </div>

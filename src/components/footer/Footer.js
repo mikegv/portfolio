@@ -13,9 +13,9 @@ const Footer = () => {
                 <a href='https://github.com/mikegv' target='_blank'>
                     <FontAwesomeIcon icon={faGithub} className='icon' />
                 </a>
-                <Link to='#'>
+                <a href='https://www.linkedin.com/in/michael-villa-338a0567/' target='_blank'>
                     <FontAwesomeIcon icon={faLinkedin} className='icon' />
-                </Link>
+                </a>
                 <Link to='#'>
                     <FontAwesomeIcon icon={faEnvelope} className='icon' />
                 </Link>
