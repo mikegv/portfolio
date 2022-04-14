@@ -1,6 +1,8 @@
 import React from 'react';
 import './ProjectsPage.css'
 
+import Project from '../project/Project';  
+
 const ProjectsPage = () => {
     return (
         <div className='projectsContainer'>
@@ -30,6 +32,9 @@ const ProjectsPage = () => {
             </div>
          
 
+            <Project />
+
+            
         </div>
     );
 };

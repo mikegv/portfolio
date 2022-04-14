@@ -1,0 +1,40 @@
+.projectExample:hover{
+    border: solid white 2px;
+}
+.projectExample{
+    border: solid rgba(100,100,600, 0) 2px;
+    display:flex;
+    position: relative;
+}
+
+.projectExample img{
+    width:429px;
+    height:223px;
+}
+
+.projectModal{
+    position: absolute;
+    background-image: linear-gradient(rgba(500,500,500,.3), rgba(0,0,0, .9));
+    width: 100%;
+    height: 100%;
+    display: flex;    
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding: 3px;
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+.projectModal:hover{
+    opacity: 1;
+    transition: opacity .2s ease;
+}
+.builtWithText{
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+
+.builtWithText div{
+    margin: 15px;
+}
