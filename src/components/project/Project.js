@@ -1,5 +1,9 @@
 import React from 'react';
 import './Project.css'
+import { faReact } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+
 
 const Project = (props) => {
     const imageFileName = props.fileName
