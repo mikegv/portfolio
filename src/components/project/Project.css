@@ -1,10 +1,11 @@
-.projectExample:hover{
-    border: solid white 2px;
-}
+
 .projectExample{
     border: solid rgba(100,100,600, 0) 2px;
-    display:flex;
     position: relative;
+    width:431px;
+    height:225px;
+    display:flex;
+    margin: 20px;
 }
 
 .projectExample img{
@@ -15,8 +16,8 @@
 .projectModal{
     position: absolute;
     background-image: linear-gradient(rgba(500,500,500,.3), rgba(0,0,0, .9));
-    width: 100%;
-    height: 100%;
+    width:431px;
+    height:225px;
     display: flex;    
     flex-direction: column;
     justify-content: end;
@@ -24,6 +25,7 @@
     padding: 3px;
     opacity: 0;
     transition: opacity .2s ease;
+    border: solid white 2px;
 }
 .projectModal:hover{
     opacity: 1;
