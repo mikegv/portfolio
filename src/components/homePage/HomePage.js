@@ -1,9 +1,17 @@
 import React from 'react';
 import './HomePage.css'
+import { motion } from 'framer-motion'
 
 const HomePage = () => {
     
     return (
+        <
+        motion.div 
+        initial={{scaleY: 0}} 
+        animate={{scaleY: 1}}
+        exit={{scaleY: 0}}
+        transition={{duration: .5}}
+        >
         <div className='homepageContainer'>
             <div className='graybox'>
 
@@ -14,6 +22,7 @@ const HomePage = () => {
                 <p>I make dynamic websites </p>
             </div>
         </div>
+        </motion.div>
     );
 };
 

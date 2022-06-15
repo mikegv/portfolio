@@ -27,8 +27,8 @@
     opacity: .0;
     color: rgb(207, 207, 207);
     animation-name: nameanimation;
-    animation-duration: 1s;
-    animation-delay: .3s;
+    animation-duration: 1.5s;
+    animation-delay: .5s;
     animation-fill-mode:forwards;
 }
 @keyframes nameanimation{

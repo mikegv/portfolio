@@ -12,6 +12,7 @@
     position: absolute;
     width:429px;
     height:223px;
+    border-radius: 5px;
 }
 .gifImage{
     opacity: 0;
@@ -33,6 +34,7 @@
     transition: opacity .2s ease;
     border: solid white 2px;
     overflow: hidden;
+    border-radius: 5px;
 }
 
 .projectModal:hover{
