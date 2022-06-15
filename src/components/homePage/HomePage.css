@@ -25,9 +25,10 @@
 }
 .myname{
     opacity: .0;
+    color: rgb(207, 207, 207);
     animation-name: nameanimation;
-    animation-duration: 3.5s;
-    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-delay: .3s;
     animation-fill-mode:forwards;
 }
 @keyframes nameanimation{

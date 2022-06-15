@@ -1,21 +1,15 @@
 import React from 'react';
 import './ProjectsPage.css'
-
-import Project from '../project/Project';  
+import projectArray from '../../projects.js'
+import Project from '../project/Project'  
 
 const ProjectsPage = () => {
     return (
         <div className='projectsContainer'>
             
          
-
-            <Project fileName={'frontEndForm.gif'} />
-
-            <Project fileName={'fourcards.PNG'} />
-
-            <Project fileName={'baseapparel.gif'} />
-
-
+            {projectArray.map(project => <Project key={project.name} info={project} />)}
+            
 
         </div>
     );
