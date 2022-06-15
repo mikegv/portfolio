@@ -18,6 +18,7 @@ const AboutMe = () => {
                 you can find me spending time outdoors with my family and sometimes watching the occasional 80's horror movie.
                 Feel free to contact me or check out my github using the links below.
             </p>
+            
         </motion.div>
 
     );

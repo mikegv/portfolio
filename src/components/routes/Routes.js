@@ -2,6 +2,8 @@ import { Switch, Route, useLocation } from 'react-router-dom';
 import AboutMe from '../aboutme/AboutMe';
 import ProjectsPage from '../projectsPage/ProjectsPage';
 import HomePage from '../homePage/HomePage';
+import Contact from '../contact/Contact'
+
 import { AnimatePresence } from 'framer-motion'
 
 
@@ -14,6 +16,7 @@ const Routes = ()=>{
             <Route exact path='/' component={HomePage} />
             <Route path='/projects' component={ProjectsPage} />
             <Route path='/aboutme' component={AboutMe} />
+            <Route path='/contact' component={Contact} />
         </Switch>
         </AnimatePresence>
     )
