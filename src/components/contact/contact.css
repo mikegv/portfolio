@@ -45,3 +45,11 @@ textarea:focus{
     cursor: not-allowed;
     background-color:rgb(218, 218, 218);
 }
+
+.contactForm p{
+    text-align: center;
+    width: 30%;
+    background-color: rgb(255, 216, 144);
+    border: solid rgb(255, 216, 144) 2px;
+    color: red;
+}
