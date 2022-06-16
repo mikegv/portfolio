@@ -10,9 +10,7 @@ const Project = (props) => {
     return (
         <div className='projectExample'>
             <img src={process.env.PUBLIC_URL + '/images/projects/' + imageFileName}   alt='project example' className='jpgImage' />
-            <img src={process.env.PUBLIC_URL + '/images/projects/' + props.info.gifName}  alt='project example' className='gifImage' />
             <div onMouseEnter={()=>setImageFileName(props.info.gifName)} onMouseLeave={()=>setImageFileName(props.info.jpgName)} className='projectModal' >
-            
                 <p className='projectLink'><a href={props.info.address} target='_blank'>{props.info.name}</a></p>
                 <div className='builtWithText'>
                     <FontAwesomeIcon icon={faReact} />
