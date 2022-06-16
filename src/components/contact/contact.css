@@ -6,6 +6,7 @@
     justify-content:center;
     width: 100vw;
     align-items: center;
+    position:relative;
 }
 .contactForm > *{
     margin-bottom: 20px;
@@ -16,7 +17,10 @@ input{
     width: 500px;
     font-size: 16px;
     padding: 10px;
-
+    border: none;
+}
+input:focus{
+    outline: blue 3px solid;
 }
 textarea{
     font-size: 16px;
@@ -25,7 +29,9 @@ textarea{
     height: 200px;
     width: 500px;
 }
-
+textarea:focus{
+    outline: blue 3px solid;
+}
 .contactForm button{
     font-size: 16px;
     font-weight: 600;
@@ -34,4 +40,8 @@ textarea{
 }
 .contactForm button:hover{
     cursor: pointer;
+}
+.contactForm button:disabled{
+    cursor: not-allowed;
+    background-color:rgb(218, 218, 218);
 }

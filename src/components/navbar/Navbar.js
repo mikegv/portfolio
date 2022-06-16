@@ -9,7 +9,7 @@ const Navbar = () => {
     const [menuItems, setMenuItems] = useState(mouseOut)
 
     return (
-        <div class='navbar' onMouseOver={
+        <div className='navbar' onMouseOver={
                 ()=>{setMenuItems(mouseOver)}
         } 
         onMouseOut={
