@@ -3,12 +3,16 @@
     margin-top:100px;
     overflow: hidden;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
-.graybox{
-    background-color: white;
+.graybox img{
+    height: 50vh;
+    width: 30vw;
 }
 .homepage{
-    border: solid 2px green;
     color:white;
     display:inline-block;
     font-size: 250%;

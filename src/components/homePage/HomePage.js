@@ -1,30 +1,31 @@
 import React from 'react';
 import './HomePage.css'
 import { motion } from 'framer-motion'
-import { publish } from 'gh-pages';
 
 const HomePage = () => {
-    
+
     return (
         <
-        motion.div 
-        initial={{scaleY: 0}} 
-        animate={{scaleY: 1}}
-        exit={{scaleY: 0}}
-        transition={{duration: .5}}
+            motion.div
+            initial={{ scaleY: 0 }}
+            animate={{ scaleY: 1 }}
+            exit={{ scaleY: 0 }}
+            transition={{ duration: .5 }}
         >
-        <div className='homepageContainer'>
-            <div className='graybox'>
-            
-            </div>
-            <div className='homepage'>
-                <motion.div initial={{x: '100vw' }} animate={{x: 0  }} transition={{duration: 1 , delay: 1}} >
-                <p className='titleSentence'>My name is <br /><span className='myname'>Mike Villa</span></p>
-                <p>I am a front end developer </p>
-                <p>I make dynamic websites </p>
+            <div className='homepageContainer'>
+                <motion.div initial={{ x: 250 }} animate={{ x: '-100vw' }} transition={{ duration: 1, delay: 1.5 }} className='graybox' >
+
+                    <img src={process.env.PUBLIC_URL + '/images/projects/me.jpg'} alt='project example' className='jpgImage' />
+
                 </motion.div>
+                <div className='homepage'>
+                    <motion.div initial={{ x: '100vw' }} animate={{ x: -250 }} transition={{ duration: 1, delay: 1 }} >
+                        <p className='titleSentence'>My name is <br /><span className='myname'>Mike Villa</span></p>
+                        <p>I am a front end developer </p>
+                        <p>I make dynamic websites </p>
+                    </motion.div>
+                </div>
             </div>
-        </div>
         </motion.div>
     );
 };

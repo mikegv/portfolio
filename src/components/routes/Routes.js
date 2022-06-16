@@ -11,7 +11,7 @@ const Routes = ()=>{
     const location = useLocation()
 
     return(
-        <AnimatePresence exitBeforeEnter initial={false}>
+        <AnimatePresence exitBeforeEnter >
         <Switch location={location} key={location.pathname}>
             <Route exact path='/' component={HomePage} />
             <Route path='/projects' component={ProjectsPage} />
