@@ -4,7 +4,11 @@
     overflow: hidden;
     text-align: center;
 }
+.graybox{
+    background-color: white;
+}
 .homepage{
+    border: solid 2px green;
     color:white;
     display:inline-block;
     font-size: 250%;
