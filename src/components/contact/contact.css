@@ -1,11 +1,14 @@
 .contactForm{
+    margin-top: 150px;
     color:white;
     display:flex;
     flex-direction:column;
     justify-content:center;
     width: 100vw;
-    border: solid green 1px;
     align-items: center;
+}
+.contactForm > *{
+    margin-bottom: 20px;
 }
 input{
     border-radius: 10px;
@@ -21,4 +24,14 @@ textarea{
     padding: 10px;
     height: 200px;
     width: 500px;
+}
+
+.contactForm button{
+    font-size: 16px;
+    font-weight: 600;
+    height: 30px;
+    width: 130px;
+}
+.contactForm button:hover{
+    cursor: pointer;
 }

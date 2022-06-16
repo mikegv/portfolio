@@ -50,6 +50,7 @@
 
 .builtWithText > *{
     margin: 15px;
+    color: white;
 }
 
 .projectLink{
@@ -57,6 +58,7 @@
 }
 .projectLink a{
     text-decoration:none;
+    color: white;
 }
 .projectExample a:visited{
     color: white;
