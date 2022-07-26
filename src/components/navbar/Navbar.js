@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.css'
-import { Link } from 'react-router-dom'
+import { Link } from 'gatsby'
 import { useState } from 'react';
 
 const Navbar = () => {
@@ -18,8 +18,8 @@ const Navbar = () => {
             <div>Mikes Portfolio</div>
             <ul>
                 <li><Link to="/" >{menuItems.Home}</Link></li>
-                <li><Link to='/aboutme'>{menuItems.AboutMe}</Link></li>
-                <li><Link to='/projects'>{menuItems.Projects}</Link></li>
+                <li><Link to='/about'>{menuItems.AboutMe}</Link></li>
+                <li><Link to='/myprojects'>{menuItems.Projects}</Link></li>
             </ul>
         </div>
     );

@@ -1,0 +1,159 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-color:black;
+    
+  }
+  .App{
+    display:flex;
+    flex-direction: column;
+    min-height: 98vh;
+  }
+  .content{
+    flex-grow:1;
+  }
+  
+.footer{
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.footer .socialIcons{
+  display:flex;
+  padding-right: 250px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.footer .socialIcons .icon{
+  height: 25px;
+  width: 25px;
+  color:white;
+  transition: transform .3s;
+}
+.footer .socialIcons .icon:hover{
+  color:white;
+  transform: translateY(-3px);
+  transition: transform .3s;
+}
+.footer a{
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+  font-size: larger;
+  letter-spacing: 10px;
+  margin-left: 50px;
+}
+
+
+.homepageContainer{
+  height: 50vh;
+  margin-top:100px;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.graybox img{
+  height: auto;
+  width: 25vw;
+}
+.homepage{
+  color:white;
+  display:inline-block;
+  font-size: 250%;
+  color:rgb(148, 148, 148);
+ /* animation-name: example;
+  animation-duration: 2.5s;
+  animation-delay: .5s;
+  animation-fill-mode: backwards;*/
+}
+.titleSentence{
+  font-size: 250%;
+  color:rgb(179, 179, 179);
+}
+
+@keyframes example{
+  from{margin-right: -3000px;}
+  to{}
+}
+.myname{
+  opacity: .0;
+  color: rgb(207, 207, 207);
+  animation-name: nameanimation;
+  animation-duration: 1.5s;
+  animation-delay: .5s;
+  animation-fill-mode:forwards;
+}
+@keyframes nameanimation{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+.mike{
+  display:inline-block;
+  border: solid red 2px;
+  color: white;
+  animation-name: example2;
+  animation-duration: 2s;
+}
+
+@keyframes example2{
+  from{
+margin-right: 100px;    }
+  to{
+      margin-right: 300px;
+  }
+
+}
+
+
+.aboutMe{
+    display:flex;
+    flex-direction: column;
+    color:rgb(207, 207, 207);
+    border: solid black 2px;
+    font-size: xx-large;
+    font-weight: 800;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 120%;
+    padding: 50px 200px 50px 200px;
+    margin-top: 100px;
+}
+
+
+.aboutMeTitle{
+    font-size: 200%;
+    margin-bottom: 50px;
+    line-height: 140%;
+}
+
+.projectsContainer{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  min-height: 60vh;
+  color:white;
+  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.project{
+  display: flex;
+  align-items: center;
+  margin: 20px 20px 20px 20px;
+}
+
+.project a img{
+  width:429px;
+  height:223px;
+}
