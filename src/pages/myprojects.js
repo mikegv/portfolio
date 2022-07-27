@@ -1,10 +1,26 @@
 import React from 'react';
-import projectArray from '../projects.js'
+
 import Project from '../components/project/Project'  
 import { motion } from 'framer-motion'
 import Layout from '../components/Layout'
+import { graphql } from 'gatsby';
 
-const ProjectsPage = () => {
+
+export const query = graphql `
+query MyQuery {
+  allFile {
+    nodes {
+      id
+      publicURL
+      name
+    }
+  }
+}
+  `
+
+const ProjectsPage = ({data}) => {
+    console.log('query: ',data.allFile.nodes)
+    const projectsInfo = data.allFile.nodes
     return (
         <Layout>
             <
@@ -17,8 +33,8 @@ const ProjectsPage = () => {
             <div className='projectsContainer'>
                 
             
-                {projectArray.map(project => <Project key={project.name} info={project} />)}
-                
+                {projectsInfo.map(project => <Project key={project.name} info={project} />)}
+                {/* <img src={`../gifs/${data.allFile.nodes[1].name}.gif`} /> */}
 
             </div>
             </motion.div>
@@ -27,3 +43,4 @@ const ProjectsPage = () => {
 };
 
 export default ProjectsPage;
+
