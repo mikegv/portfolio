@@ -16,7 +16,7 @@ const HomePage = () => {
             <div className='homepageContainer'>
                 <motion.div initial={{ x: 250 }} animate={{ x: '-100vw' }} transition={{ duration: 1, delay: 1.8 }} className='graybox' >
 
-                    <img src={process.env.PUBLIC_URL + '/images/projects/me2.jpg'} alt='project example' className='jpgImage' />
+                    <img src={'../images/me2.jpg'} alt='project example' className='jpgImage' />
 
                 </motion.div>
                 <div className='homepage'>

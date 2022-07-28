@@ -1,5 +1,5 @@
 import React from 'react';
-
+import projectsInfo from '../projectsInfo/projects'
 import Project from '../components/project/Project'  
 import { motion } from 'framer-motion'
 import Layout from '../components/Layout'
@@ -20,7 +20,7 @@ query MyQuery {
 
 const ProjectsPage = ({data}) => {
     console.log('query: ',data.allFile.nodes)
-    const projectsInfo = data.allFile.nodes
+    // const projectsInfo = data.allFile.nodes
     return (
         <Layout>
             <
@@ -32,9 +32,9 @@ const ProjectsPage = ({data}) => {
             >
             <div className='projectsContainer'>
                 
-            
+            {console.log(projectsInfo)}
                 {projectsInfo.map(project => <Project key={project.name} info={project} />)}
-                {/* <img src={`../gifs/${data.allFile.nodes[1].name}.gif`} /> */}
+                
 
             </div>
             </motion.div>
