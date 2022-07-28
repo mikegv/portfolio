@@ -1,27 +1,46 @@
 import React from 'react';
-import projectsInfo from '../projectsInfo/projects'
 import Project from '../components/project/Project'  
 import { motion } from 'framer-motion'
 import Layout from '../components/Layout'
 import { graphql } from 'gatsby';
 
 
-export const query = graphql `
+export const projectsData = graphql `
 query MyQuery {
-  allFile {
+  allProjectsJson {
     nodes {
-      id
-      publicURL
+      github
+      jpgName
+      gifName
+      address
       name
     }
   }
+  allImageSharp {
+    nodes {
+      id
+      fluid {
+        src
+        srcWebp
+        originalName
+      }
+    }
+  }
+  allFile {
+    nodes {
+      name
+      publicURL
+    }
+  }
 }
-  `
-
+`
 const ProjectsPage = ({data}) => {
-    console.log('query: ',data.allFile.nodes)
-    // const projectsInfo = data.allFile.nodes
-    return (
+
+    const imageSharpArray = data.allImageSharp.nodes
+    const files = data.allFile.nodes   
+    const gifs = files.filter(item => item.publicURL.includes('gif'))
+   
+   return (
         <Layout>
             <
             motion.div 
@@ -31,11 +50,13 @@ const ProjectsPage = ({data}) => {
             transition={{duration: .5}}
             >
             <div className='projectsContainer'>
-                
-            {console.log(projectsInfo)}
-                {projectsInfo.map(project => <Project key={project.name} info={project} />)}
-                
-
+                {
+                data.allProjectsJson.nodes.map((project, index) => {
+                 const jpgInfo = imageSharpArray.find(item => item.fluid.originalName === project.jpgName)
+                 const gifInfo = gifs.find(item => project.gifName.includes(item.name))
+                 return <Project key={index} info={project}  images={jpgInfo} gif={gifInfo} />
+                })
+                }
             </div>
             </motion.div>
         </Layout>

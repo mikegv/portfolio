@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout'
 import { motion } from 'framer-motion'
+import { StaticImage } from "gatsby-plugin-image"
 
 const HomePage = () => {
 
@@ -16,7 +17,8 @@ const HomePage = () => {
             <div className='homepageContainer'>
                 <motion.div initial={{ x: 250 }} animate={{ x: '-100vw' }} transition={{ duration: 1, delay: 1.8 }} className='graybox' >
 
-                    <img src={'../images/me2.jpg'} alt='project example' className='jpgImage' />
+                    {/* <img src={'../images/me2.jpg'} alt='project example' className='jpgImage' /> */}
+                    <StaticImage src="../images/me2.jpg" alt="Mike Villa pointing at right of screen" />
 
                 </motion.div>
                 <div className='homepage'>
