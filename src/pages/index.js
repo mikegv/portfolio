@@ -1,10 +1,11 @@
 import React from 'react';
 import Layout from '../components/Layout'
 import { motion } from 'framer-motion'
-import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
+import { graphql } from 'gatsby';
 
-const HomePage = () => {
-
+const HomePage = ({data}) => {
+console.log(data)
     return (
         <Layout>
         <
@@ -18,8 +19,8 @@ const HomePage = () => {
                 <motion.div initial={{ x: 250 }} animate={{ x: '-100vw' }} transition={{ duration: 1, delay: 1.8 }} className='graybox' >
 
                     {/* <img src={'../images/me2.jpg'} alt='project example' className='jpgImage' /> */}
-                    <StaticImage src="../images/me2.jpg" alt="Mike Villa pointing at right of screen" />
-
+                    {/* <StaticImage src="../images/me2.jpg" alt="Mike Villa pointing at right of screen" /> */}
+                    <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} className='jpgImage' />
                 </motion.div>
                 <div className='homepage'>
                     <motion.div initial={{ x: '100vw' }} animate={{ x: -190 }} transition={{ duration: 1, delay: 1.3 }} >
@@ -35,3 +36,12 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
+export const query = graphql`query imageQuery {
+    file(relativePath: {eq: "me2.jpg"}) {
+      childImageSharp {
+        gatsbyImageData
+      }
+    }
+  }
+  `
