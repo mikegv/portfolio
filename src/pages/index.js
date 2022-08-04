@@ -5,7 +5,7 @@ import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
 import { graphql } from 'gatsby';
 
 const HomePage = ({data}) => {
-console.log(data)
+
     return (
         <Layout>
         <
@@ -20,7 +20,7 @@ console.log(data)
 
                     {/* <img src={'../images/me2.jpg'} alt='project example' className='jpgImage' /> */}
                     {/* <StaticImage src="../images/me2.jpg" alt="Mike Villa pointing at right of screen" /> */}
-                    <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} className='jpgImage' />
+                    <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} className='jpgImage' alt='self photo' />
                 </motion.div>
                 <div className='homepage'>
                     <motion.div initial={{ x: '100vw' }} animate={{ x: -190 }} transition={{ duration: 1, delay: 1.3 }} >

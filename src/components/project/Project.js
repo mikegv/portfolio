@@ -7,7 +7,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Project = (props) => {
     const [imageFileName, setImageFileName] = useState(props.images.fluid.src)
-    console.log(props.gif)
     return (
         <div className='projectExample'>
             {/* <img src={process.env.PUBLIC_URL + '/images/projects/' + imageFileName}   alt='project example' className='jpgImage' /> */}
