@@ -3,7 +3,7 @@ import './HomePage.css'
 import { motion } from 'framer-motion'
 
 const HomePage = () => {
-
+    
     return (
         <
             motion.div

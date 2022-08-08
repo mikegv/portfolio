@@ -51,11 +51,10 @@
     animation-duration: 2s;
 }
 
-@keyframes example2{
+@keyframes imageAnimation{
     from{
-margin-right: 100px;    }
+margin-right: 100px;   }
     to{
         margin-right: 300px;
     }
-
 }
