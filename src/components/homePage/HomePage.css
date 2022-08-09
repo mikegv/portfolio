@@ -8,9 +8,9 @@
     justify-content: center;
 }
 .graybox img{
-    height: auto;
     width: 25vw;
-    border: solid red 2px;
+    height: auto;
+    border-radius: 10px;
 }
 .homepage{
     color:white;
@@ -70,5 +70,8 @@ margin-right: 100px;   }
 @media screen and (max-width: 425px) {
     .homepage{
         font-size: 1.5rem;
+    }
+    .graybox img{
+        width: 75vw;
     }
 }

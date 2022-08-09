@@ -13,13 +13,13 @@ const HomePage = () => {
             transition={{ duration: .5 }}
         >
             <div className='homepageContainer'>
-                <motion.div initial={{ x: '0vw' }} animate={{ x: '-100vw' }} transition={{ duration: 1, delay: 1.8 }} className='graybox' >
+                <motion.div initial={{ x: '0vw' }} animate={{ x: '-100vw' }} transition={{ duration: 1, delay: 2 }} className='graybox' >
 
                     <img src={process.env.PUBLIC_URL + '/images/projects/me2.jpg'} alt='project example' className='jpgImage' />
 
                 </motion.div>
                 <div className='homepage'>
-                    <motion.div initial={{ x: '100vw' }} animate={{ x: '0vw' }} transition={{ duration: 1, delay: 1.7 }} >
+                    <motion.div initial={{ x: '100vw' }} animate={{ x: '0vw' }} transition={{ duration: 1, delay: 1.9 }} >
                         <p className='titleSentence'>My name is <br /><span className='myname'>Mike Villa</span></p>
                         <p>I am a front end developer </p>
                         <p>I make dynamic websites </p>
