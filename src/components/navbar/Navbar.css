@@ -40,3 +40,24 @@ ul li a{
     border-bottom: 2px solid rgb(199, 192, 192);
     transition: border-bottom .7s ease;
 }
+
+@media screen and (max-width: 1000px){
+    .navbar{
+        display: none;
+    }
+    .navMobile{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        position: absolute;
+        width: 100%;
+        z-index: 12;
+        background-color: black;
+    }   
+    span{
+        width: fit-content;
+    }
+    li{
+        margin: 2rem 0rem;
+    }
+}
