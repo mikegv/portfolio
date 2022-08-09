@@ -64,7 +64,7 @@ ul li a{
     .navMobile ul{
         background-color: black;
     }
-    .navMobile li{
+    .navMobile ul li{
         margin: 2.5rem 0rem;
         z-index: 12;
     }
