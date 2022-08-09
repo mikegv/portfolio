@@ -20,3 +20,12 @@
     width:429px;
     height:223px;
 }
+
+@media screen and (max-width: 800px ) {
+    .projectsContainer{
+        
+        color:white;
+        padding: 0;
+        margin: 3rem 0rem;
+    }
+}
