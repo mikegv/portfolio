@@ -61,7 +61,11 @@ ul li a{
         width: 2.2rem;
         height: auto;
     }
-    li{
+    .navbar ul{
+        background-color: black;
+    }
+    .navbar li{
         margin: 2rem 0rem;
+        z-index: 12;
     }
 }
