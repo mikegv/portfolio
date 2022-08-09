@@ -13,11 +13,7 @@ const ProjectsPage = () => {
         transition={{duration: .5}}
         >
         <div className='projectsContainer'>
-            
-         
             {projectArray.map(project => <Project key={project.name} info={project} />)}
-            
-
         </div>
         </motion.div>
     );

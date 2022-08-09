@@ -2,16 +2,16 @@
 .projectExample{
     border: solid rgba(100,100,600, 0) 2px;
     position: relative;
-    width:431px;
-    height:225px;
+    width:26.9375rem; /*431px*/
+    height:14.0625rem;/*225px */
     display:flex;
     margin: 20px;
 }
 
 .projectExample img{
     position: absolute;
-    width:429px;
-    height:223px;
+    width:100%;
+    height:100%;
     border-radius: 5px;
 }
 .gifImage{
@@ -23,8 +23,8 @@
 .projectModal{
     position: absolute;
     background-image: linear-gradient(rgba(500,500,500,.3), rgba(0,0,0, .9));
-    width:431px;
-    height:225px;
+    width:100%;
+    height:100%;
     display: flex;    
     flex-direction: column;
     justify-content: end;
@@ -62,4 +62,14 @@
 }
 .projectExample a:visited{
     color: white;
+}
+
+@media screen and (max-width: 800px) {
+    
+    .projectExample{
+        width:23.4375rem;
+        height:12.1875rem;
+        margin: 1rem;
+    }
+
 }
