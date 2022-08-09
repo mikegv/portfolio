@@ -57,6 +57,10 @@ ul li a{
     span{
         width: fit-content;
     }
+    span > * {
+        width: 2.2rem;
+        height: auto;
+    }
     li{
         margin: 2rem 0rem;
     }

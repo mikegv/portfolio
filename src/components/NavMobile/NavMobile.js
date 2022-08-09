@@ -13,7 +13,9 @@ const NavMobile = () => {
         </ul>
     return (
         <div className='navMobile'>
-            <span onClick={()=>setOpen(!open)}><CgMenu /></span>
+            <span onClick={()=>setOpen(!open)}>
+                <CgMenu />
+            </span>
             {open && links}
         </div>
     );
