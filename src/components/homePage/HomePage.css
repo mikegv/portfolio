@@ -1,22 +1,24 @@
 .homepageContainer{
-    height: 50vh;
+    min-height: 50vh;
     margin-top:100px;
     overflow: hidden;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 .graybox img{
     height: auto;
     width: 25vw;
+    border: solid red 2px;
 }
 .homepage{
     color:white;
     display:inline-block;
     font-size: 250%;
     color:rgb(148, 148, 148);
+    position: absolute;
+    
    /* animation-name: example;
     animation-duration: 2.5s;
     animation-delay: .5s;
@@ -56,5 +58,17 @@
 margin-right: 100px;   }
     to{
         margin-right: 300px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .homepage{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .homepage{
+        font-size: 1.5rem;
     }
 }
