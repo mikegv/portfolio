@@ -61,11 +61,11 @@ ul li a{
         width: 2.2rem;
         height: auto;
     }
-    .navbar ul{
+    .navMobile ul{
         background-color: black;
     }
-    .navbar li{
-        margin: 2rem 0rem;
+    .navMobile li{
+        margin: 2.5rem 0rem;
         z-index: 12;
     }
 }
