@@ -72,7 +72,6 @@
         margin: 1rem;
     }
     .projectModal{
-        padding: 0;
-        border: solid green 1px;
+        justify-content:flex-end;
     }
 }
