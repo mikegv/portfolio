@@ -14,17 +14,25 @@ export default [
         'jpgName' : 'mancala.jpg'
     },
     {
-        'name' : 'Shortly',
+        'name' : 'Live Healthy',
+        'address' : 'https://we-live-healthy.netlify.app/',
+        'github' : 'https://github.com/OxanaSF/healthy-hood',
+        'gifName' : 'healthyhood-Gif.gif',
+        'jpgName' : 'healthyhood2.jpg'
+    },
+    {
+        'name' : 'Shortly (Front End Challenge Project)',
         'address' : 'https://url-shortener-95ea0.web.app/',
         'github' : 'https://github.com/mikegv/url-shortening-api',
         'gifName' : 'shortlyGif.gif',
         'jpgName' : 'shortly.jpg'
     },
     {
-        'name' : 'Insure Landing Page',
+        'name' : 'Insure Landing Page (Front End Challenge Project)',
         'address' : 'https://mikegv.github.io/insure-landing-page/',
         'github' : 'https://github.com/mikegv/insure-landing-page',
         'gifName' : 'insureGif.gif',
         'jpgName' : 'insure.jpg'
-    } 
+    },
+   
 ]
