@@ -72,10 +72,7 @@
         margin: 1rem;
     }
     .projectModal{
-        padding: .5rem;
-    }
-    .builtWithText > *{
-        margin: .5rem;
-        border: solid red 2px;
+        padding: 0;
+        border: solid green 1px;
     }
 }
