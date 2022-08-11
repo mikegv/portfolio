@@ -20,18 +20,16 @@ const AboutMe = () => {
                 you can find me spending time outdoors with my family and sometimes watching some 80's horror movies.
                 Feel free to check out my resume or contact me using the links below.
             </p>
-            <p className='aboutMe'>
+           
                 Resume:
                 <div className="resume-container">
-                
                 <embed 
-                src={process.env.PUBLIC_URL + "/files/resume.pdf#zoom=FitH"}
+                src={process.env.PUBLIC_URL + "/files/resume.pdf#view=FitH"} width="actual-width.px" height="actual-height.px"
                 type='application/pdf'
-                
                 />
 
       </div>
-            </p>
+           
         </motion.div>
 
     );

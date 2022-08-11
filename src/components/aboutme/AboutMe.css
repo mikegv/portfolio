@@ -39,8 +39,9 @@ embed{
         font-size: 2rem;
         font-weight: 500;
     }
-    .resume-container{
-        min-width: 80vw;
-        /* height: 50vh; */
+
+    embed{
+        width: 100%;
+        height: 100%;
     }
 }
