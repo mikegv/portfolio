@@ -15,7 +15,7 @@ const Navbar = () => {
         onMouseOut={
             ()=>{setMenuItems(mouseOut)}
         } >
-            <div>Mikes Portfolio</div>
+            <div></div>
             <ul>
                 <li><Link to="/" >{menuItems.Home}</Link></li>
                 <li><Link to='/aboutme'>{menuItems.AboutMe}</Link></li>
