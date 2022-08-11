@@ -18,10 +18,10 @@
     line-height: 140%;
 }
 .resume-container{
-    
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5rem;
 }
 .resume-image{
     display: none;
