@@ -18,6 +18,8 @@
     font-size: 250%;
     color:rgb(148, 148, 148);
     position: absolute;
+    width: 100%;
+    overflow: hidden;
     
    /* animation-name: example;
     animation-duration: 2.5s;
