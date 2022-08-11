@@ -1,6 +1,7 @@
 import React from 'react';
 import './AboutMe.css'
 import { motion } from 'framer-motion'
+import { Page, Document } from "react-pdf";
 
 
 const AboutMe = () => {
@@ -22,12 +23,13 @@ const AboutMe = () => {
             <p className='aboutMe'>
                 Resume:
                 <div className="resume-container">
-      <embed
-        src={`${process.env.PUBLIC_URL}/files/Michael_Villa_Resume.pdf`}
-        type="application/pdf"
-        width="100%"
-        height="900px"
-      />
+                <embed 
+                src={process.env.PUBLIC_URL + "/files/resume.pdf"}
+                type='application/pdf'
+                width='100%'
+                height='900px'
+                />
+
       </div>
             </p>
         </motion.div>
