@@ -23,11 +23,11 @@ const AboutMe = () => {
             <p className='aboutMe'>
                 Resume:
                 <div className="resume-container">
+                
                 <embed 
-                src={process.env.PUBLIC_URL + "/files/resume.pdf"}
+                src={process.env.PUBLIC_URL + "/files/resume.pdf#zoom=FitH"}
                 type='application/pdf'
-                width='100%'
-                height='900px'
+                
                 />
 
       </div>
