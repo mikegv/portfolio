@@ -1,4 +1,11 @@
-export default [
+const projects = [
+    {
+        'name' : 'Mixellence',
+        'address' : 'https://mixellence-67ae5.web.app/',
+        'github' : 'https://github.com/tdebella/Mixellence-Restaurant',
+        'gifName' : 'mixellenceGif.gif',
+        'jpgName' : 'mixellence.jpg'
+    },
     {
         'name' : 'Al Pastor Papi',
         'address' : 'https://mikegv.github.io/Al-Pastor-Papi/',
@@ -34,5 +41,7 @@ export default [
         'gifName' : 'insureGif.gif',
         'jpgName' : 'insure.jpg'
     },
-   
+  
 ]
+
+export default projects;
