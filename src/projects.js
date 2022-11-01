@@ -15,7 +15,7 @@ const projects = [
     },
     {
         'name' : 'Mancala',
-        'address' : 'https://reactappmancala.herokuapp.com/',
+        'address' : 'https://mikegv.github.io/mancala/',
         'github' : 'https://github.com/mikegv/mancala',
         'gifName' : 'mancalaGif.gif',
         'jpgName' : 'mancala.jpg'
